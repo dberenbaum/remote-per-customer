@@ -1,0 +1,4 @@
+['remote "customer1"']
+    url = /tmp/customer1
+['remote "customer2"']
+    url = /tmp/customer2

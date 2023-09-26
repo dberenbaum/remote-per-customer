@@ -1,0 +1,20 @@
+schema: '2.0'
+stages:
+  example@customer0:
+    cmd:
+    - mkdir customer1
+    - echo customer1 > customer1/output.txt
+    outs:
+    - path: customer1/output.txt
+      hash: md5
+      md5: e2d2597bab338fa0c1d1fa3838cc4557
+      size: 10
+  example@customer1:
+    cmd:
+    - mkdir customer2
+    - echo customer2 > customer2/output.txt
+    outs:
+    - path: customer2/output.txt
+      hash: md5
+      md5: 6753e58c665fcc0ad12cdd84bc245a66
+      size: 10

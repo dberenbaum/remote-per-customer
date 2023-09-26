@@ -1,0 +1,10 @@
+stages:
+  example:
+    matrix:
+      customer: ${customers}
+    cmd:
+      - mkdir ${item.customer.name}
+      - echo ${item.customer.name} > ${item.customer.name}/output.txt
+    outs:
+      - ${item.customer.name}/output.txt:
+          remote: ${item.customer.name}
